@@ -1,16 +1,12 @@
 - name: Demo on just print message
   hosts: all
   tasks:
-   - name: print Hello world
-     debug:
-       msg: Hello world
-
-   - name: install nginx
-     apt:
+    - name: install nginx
+      apt:
        name: nginx
        state: present
        update_cache: yes
-       
+
 
    
      
