@@ -5,5 +5,11 @@
      debug:
        msg: Hello world
 
+   - name: install nginx
+     apt:
+       name: nginx
+       state: present
+       update_cache: yes
+
    
      
